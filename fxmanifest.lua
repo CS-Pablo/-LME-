@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 fx_version ''
 game ''
 description 'LME'
@@ -11,6 +12,7 @@ shared_scripts {
 	'config.lua',
 	'config.weapons.lua',
 }
+
 
 server_scripts {
 
