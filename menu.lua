@@ -6,7 +6,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
 
-        if IsControlJustReleased(0, 168) -- Touche F7
+        if IsControlJustReleased(0, 167) -- Touche F6
         then 
             menuVisible = not menuVisible
             if menuVisible then
