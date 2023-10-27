@@ -1,6 +1,6 @@
 local menuVisible = false
 
-RMenu.Add('monmenu', 'mainsubmenu', RageUI.CreateMenu("Job Menu", "Sélection rapide de votre boulot"))
+RMenu.Add('JobMenu', 'mainsubmenu', RageUI.CreateMenu("Job Menu", "Sélection rapide de votre boulot"))
 
 Citizen.CreateThread(function()
     while true do
