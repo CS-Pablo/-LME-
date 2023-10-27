@@ -6,7 +6,8 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
 
-        if IsControlJustReleased(0, 168) then -- Touche F7
+        if IsControlJustReleased(0, 168) -- Touche F7
+        then 
             menuVisible = not menuVisible
             if menuVisible then
                 RageUI.Visible(RMenu:Get('monmenu', 'mainsubmenu'), true)
