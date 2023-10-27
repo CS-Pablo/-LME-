@@ -6,9 +6,10 @@ version '1.0'
 
 client_script 'menu.lua'
 
-ui_page 'html/ui.html'
+
 
 files {
+    'config.lua',
     'menu.lua',
     'server/server.lua',
     'imports.lua',
@@ -19,3 +20,5 @@ files {
     'html/js/wrapper.js',
     'html/js/app.js'
 }
+
+ui_page 'html/ui.html'
