@@ -44,3 +44,6 @@ console.log(locale[lang].bankerJob); // Affiche "Banquier"
 // Lorsqu'un joueur sélectionne un emploi (par exemple, EMS)
 const selectedJob = 'EMS';
 console.log(locale[lang].jobSelected.replace('%s', locale[lang][selectedJob])); // Affiche "Vous avez choisi l'emploi de Travailleur EMS."
+
+
+
