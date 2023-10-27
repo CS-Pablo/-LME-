@@ -6,7 +6,7 @@ Config              = {}
 -- Configurations générales
 Config.Locale = GetConvar('esx:locale', 'fr')
 Config.EnableDebug = true
-Config.ResourceName = "lme_f6_job_menu"
+Config.ResourceName = "lme_f6"
 
 -- Configurations du menu
 Config.MenuKey = 167  -- F6 (voir la liste des codes de touche)
