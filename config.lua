@@ -4,7 +4,7 @@ Config              = {}
 
 
 -- Configurations générales
-Config.Locale = GetConvar('esx:locale', 'fr')
+
 Config.EnableDebug = true
 Config.ResourceName = "lme_f6"
 
