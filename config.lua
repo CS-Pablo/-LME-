@@ -22,5 +22,38 @@ Config.Zones = {
 
 }
 
+Config.Jobs = {
+    -- ... d'autres emplois existants ...
+
+    {
+        name = 'police',
+        label = 'Policier',
+        grade = 0,
+        isPublic = true,
+        canAccess = function(xPlayer)
+            return xPlayer.getGroup() == 'police'
+        end
+    },
+    {
+        name = 'ems',
+        label = 'EMS',
+        grade = 0,
+        isPublic = true,
+        canAccess = function(xPlayer)
+            return xPlayer.getGroup() == 'ambulance'
+        end
+    },
+    {
+        name = 'banker',
+        label = 'Banquier',
+        grade = 0,
+        isPublic = true,
+        canAccess = function(xPlayer)
+            return xPlayer.getGroup() == 'banker'
+        end
+    }
+}
+
+
 
 --
