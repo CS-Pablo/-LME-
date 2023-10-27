@@ -9,6 +9,8 @@ client_script 'menu.lua'
 ui_page 'html/ui.html'
 
 files {
+    'menu.lua',
+    'server/server.lua',
     'imports.lua',
     'locale.js',
     'html/ui.html',
