@@ -1,5 +1,5 @@
-RegisterServerEvent('votre_resource:choisirJob')
-AddEventHandler('votre_resource:choisirJob', function(jobName)
+RegisterServerEvent('lme:choisirJob')
+AddEventHandler('lme:choisirJob', function(jobName)
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
