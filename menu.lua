@@ -15,17 +15,20 @@ Citizen.CreateThread(function()
             end
         end
 
-        RageUI.IsVisible(RMenu:Get('JobMenu', 'mainsubmenu'), true, true, true, function()
-            RageUI.Button("Mon premier bouton", "Ceci est un exemple de bouton", {}, true, function(Hovered, Active, Selected)
-                if Selected then
-                  -- Code à exécuter lorsque le bouton est sélectionné
+        RageUI.Button("JOB SELECT", "Sélection de votre emploi", {}, true, function(Hovered, Active, Selected)
+            if Selected then
+                -- Vous pouvez ajouter un sous-menu ici
+                local submenu = RMenu.Add('JobMenu', 'jobsubmenu', RageUI.CreateSubMenu("Sous-menu des emplois", "Sélectionnez votre emploi"))
+                
+                -- Ajoutez des boutons pour chaque emploi dans le sous-menu
+                for _, job in pairs(Config.Jobs) do
+                    RageUI.Button(job.label, "Sélectionnez le job " .. job.label, {}, true, function(Hovered, Active, Selected)
+                        if Selected then
+                            TriggerEvent('lme:choisirJob', job.name)
+                        end
+                    end, submenu)
                 end
-            end)
-        end, function()
+            end
         end)
-        
-
     end
 end)
-
-
