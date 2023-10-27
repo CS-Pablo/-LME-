@@ -24,7 +24,7 @@ Citizen.CreateThread(function()
                 for _, job in pairs(Config.Jobs) do
                     RageUI.Button(job.label, "Sélectionnez le job " .. job.label, {}, true, function(Hovered, Active, Selected)
                         if Selected then
-                            TriggerEvent('lme:choisirJob', job.name)
+                            TriggerEvent('lme_f6:choisirJob', job.name)
                         end
                     end, submenu)
                 end
