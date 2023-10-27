@@ -1,3 +1,7 @@
+document.addEventListener('customEvent', () => {
+    // Effectuer des actions ici
+});
+
 $(document).ready(function () {
     // Cache des éléments HTML
     var menuContainer = $('#menu-container');
