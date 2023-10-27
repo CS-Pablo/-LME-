@@ -1,5 +1,5 @@
 RegisterServerEvent('lme:choisirJob')
-AddEventHandler('lme:choisirJob', function(jobName)
+AddEventHandler('lme_f6:choisirJob', function(jobName)
     local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
