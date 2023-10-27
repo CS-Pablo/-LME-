@@ -10,7 +10,7 @@ const locale = {
       // Ajoutez d'autres chaînes de caractères
     },
     en: {
-      jobMenuTtle: "Job Menu",
+      jobMenuTitle: "Job Menu",
       jobMenuDescription: "Select your job:",
       policeJob: "Police Officer",
       emsJob: "EMS Worker",
