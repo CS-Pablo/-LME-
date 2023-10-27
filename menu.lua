@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
         RageUI.IsVisible(RMenu:Get('JobMenu', 'mainsubmenu'), true, true, true, function()
             RageUI.Button("Mon premier bouton", "Ceci est un exemple de bouton", {}, true, function(Hovered, Active, Selected)
                 if Selected then
-                    -- Code à exécuter lorsque le bouton est sélectionné
+                  -- Code à exécuter lorsque le bouton est sélectionné
                 end
             end)
         end, function()
