@@ -6,7 +6,7 @@ version '1.0'
 
 client_script {
     'menu.lua',
-    "RageUI.lua"
+    "src/RageUI.lua"
 
 }
 
