@@ -4,25 +4,35 @@ description 'LME'
 lua54 'yes'
 version '1.0'
 
+shared_scripts({
+	"@es_extended/imports.lua",
+	"config.lua",
+})
+
 client_script {
     'menu.lua',
-    "src/RageUI.lua"
+    "src/RageUI.lua",
+    "client/Keys.lua",
+	"src/Menu.lua",
+	"src/MenuController.lua",
+	"src/components/*.lua",
+	"src/elements/*.lua",
+	"src/items/*.lua",
+
 
 }
 
 
 
 files {
-    'config.lua',
-    'menu.lua',
     'server/server.lua',
-    'imports.lua',
-    'locale.js',
-    'html/ui.html',
-    'html/css/app.css',
-    'html/js/mustache.min.js',
-    'html/js/wrapper.js',
-    'html/js/app.js'
+
 }
 
-ui_page 'html/ui.html'
+dependencies {
+    
+	"es_extended",
+	"oxmysql",
+	"esx_status",
+	"esx_datastore",
+}
