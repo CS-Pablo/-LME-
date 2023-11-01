@@ -4,12 +4,15 @@ description 'LME'
 lua54 'yes'
 version '1.0'
 
-client_script 'menu.lua'
+client_script {
+    'menu.lua',
+    "RageUI.lua"
+
+}
 
 
 
 files {
-    'src/*.lua',
     'config.lua',
     'menu.lua',
     'server/server.lua',
