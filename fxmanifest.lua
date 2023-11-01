@@ -9,6 +9,7 @@ client_script 'menu.lua'
 
 
 files {
+    'src/*.lua',
     'config.lua',
     'menu.lua',
     'server/server.lua',
